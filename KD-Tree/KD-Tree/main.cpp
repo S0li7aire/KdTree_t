@@ -36,44 +36,7 @@ struct Node {
     Node* left;
     Node* right;
     int median;
-    int split_dimensions;//split_dimensions == false --> Ox true --> Oy
-    /*
-    Node(const std::vector<Rectangle>& rects, int d = 0) {
-        rectangles = rects;
-        depth = d;
-        left = nullptr;
-        right = nullptr;
-        if (rectangles.size() > 1) {
-            std::priority_queue<Node*, std::vector<Node*>, NodeComparator> q;
-            q.push(this);
-            while (!q.empty()) {
-                Node* current_node = q.top();
-                q.pop();
-                if (current_node->rectangles.size() <= 1) {
-                    continue;
-                }
-                current_node->split_dimensions = current_node->depth % 2;
-                std::sort(current_node->rectangles.begin(), current_node->rectangles.end(),
-                    [current_node](const Rectangle& r1, const Rectangle& r2) {
-                        if (current_node->split_dimensions == 0) {
-                            return r1.x1 < r2.x1;
-                        }
-                        else {
-                            return r1.y1 < r2.y1;
-                        }
-                    }
-                );
-                int median_idx = getMedian(current_node->rectangles, current_node->split_dimensions);
-                Rectangle median_rectangle = current_node->rectangles[median_idx];
-                std::vector<Rectangle> left_rectangles(current_node->rectangles.begin(), current_node->rectangles.begin() + median_idx);
-                std::vector<Rectangle> right_rectangles(current_node->rectangles.begin() + median_idx, current_node->rectangles.end());
-                current_node->left = new Node(left_rectangles, current_node->depth + 1);
-                current_node->right = new Node(right_rectangles, current_node->depth + 1);
-                q.push(current_node->left);
-                q.push(current_node->right);
-            }
-        }
-    }*/
+    int split_dimensions;
 
     Node(const std::vector<Rectangle>& rects, int d = 0)
     {
@@ -125,7 +88,6 @@ struct Node {
                     }
                 }
                 sort(split_dimensions);
-                //index = getIndex(rectangles, split_dimensions);
                 std::vector<Rectangle> left_rectangles(rectangles.begin(), rectangles.begin() + (rectangles.size() == 2 ? 1 :(index + 1)));
                 std::vector<Rectangle> right_rectangles(rectangles.begin() + (rectangles.size() == 2 ? 1 : (index + 1)), rectangles.end());
                 left = new Node(left_rectangles, depth + 1);
@@ -305,7 +267,7 @@ void inputHandler(sf::RenderWindow& window, float& x, float& y, KdTree& tree, bo
     {
         system("cls");
         std::cout << "x = " << x << std::endl << "y = " << y << std::endl;
-        std::cout << tree.contains(x, y) << std::endl;
+        std::cout << (tree.contains(x, y) ? "Dot is contained by a rectangle" : "Dot isn't contained by any rectangle") << std::endl;
         std::cin >> x >> y;
     }
 }

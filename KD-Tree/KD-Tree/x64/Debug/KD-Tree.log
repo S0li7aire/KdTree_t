@@ -1,8 +1,8 @@
 ﻿  main.cpp
-C:\Users\CHiTT\source\repos\KD-Tree\KD-Tree\main.cpp(92,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\CHiTT\source\repos\KD-Tree\KD-Tree\main.cpp(95,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\CHiTT\source\repos\KD-Tree\KD-Tree\main.cpp(99,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\CHiTT\source\repos\KD-Tree\KD-Tree\main.cpp(100,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\CHiTT\source\repos\KD-Tree\KD-Tree\main.cpp(113,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\CHiTT\source\repos\KD-Tree\KD-Tree\main.cpp(114,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  KD-Tree.vcxproj -> C:\Users\CHiTT\source\repos\KD-Tree\x64\Debug\KD-Tree.exe
+F:\GitHub\KdTree_t\KD-Tree\KD-Tree\main.cpp(55,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+F:\GitHub\KdTree_t\KD-Tree\KD-Tree\main.cpp(58,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\GitHub\KdTree_t\KD-Tree\KD-Tree\main.cpp(62,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+F:\GitHub\KdTree_t\KD-Tree\KD-Tree\main.cpp(63,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+F:\GitHub\KdTree_t\KD-Tree\KD-Tree\main.cpp(76,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+F:\GitHub\KdTree_t\KD-Tree\KD-Tree\main.cpp(77,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  KD-Tree.vcxproj -> F:\GitHub\KdTree_t\KD-Tree\x64\Debug\KD-Tree.exe
