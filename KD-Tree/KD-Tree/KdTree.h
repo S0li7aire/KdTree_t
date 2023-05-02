@@ -1,7 +1,6 @@
-#ifndef KDTREE_H
-#define KDTREE_H
+#pragma once
 
-#include "incl.h"
+#include "Node.h"
 
 class KdTree {
 public:
@@ -11,5 +10,3 @@ public:
 private:
     Node* root_;
 };
-
-#endif

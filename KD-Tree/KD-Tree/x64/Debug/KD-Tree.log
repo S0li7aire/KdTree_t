@@ -1,7 +1,3 @@
 ﻿  KdTree.cpp
-  KdTree.h
-  main.cpp
-F:\GitHub\KdTree_t\KD-Tree\KD-Tree\main.cpp(70,36): warning C4101: 'option': unreferenced local variable
-  Generating Code...
 x64\Debug\KdTree.obj : warning LNK4042: object specified more than once; extras ignored
   KD-Tree.vcxproj -> F:\GitHub\KdTree_t\KD-Tree\x64\Debug\KD-Tree.exe

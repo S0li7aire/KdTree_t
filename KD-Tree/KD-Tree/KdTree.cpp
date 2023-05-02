@@ -1,4 +1,3 @@
-#include "incl.h"
 #include "KdTree.h"
 
 KdTree::KdTree(const std::vector<Rectangle>& rects)

@@ -1,4 +1,5 @@
-#include "incl.h"
+#include "Node.h"
+#include <algorithm>
 
 Node::Node(const std::vector<Rectangle>& rects, int d)
 {

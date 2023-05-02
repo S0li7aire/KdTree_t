@@ -1,4 +1,8 @@
-#include "incl.h"
+﻿#include "KdTree.h"
+
+#include <iostream>
+#include <thread>
+#include <SFML\Graphics.hpp>
 
 //-----------------------Create list of rectangle shapes-----------------------
 std::vector<sf::ConvexShape> makeList(const std::vector<Rectangle>& fillList, std::vector<sf::ConvexShape>& outlineList, int mult) {
@@ -66,8 +70,7 @@ int main() {
     KdTree tree(list);
     float inputX = 11.f, inputY = 11.f;
     bool dotDrawn = false;
-    std::cout << "Select Resolution:\n1.640x360\n2.854x480\n3.960x540\n4.1024x576\n5.1280x720" << std::endl;
-    int width = 854, height = 480, option, multiplier = 10;
+    int width = 854, height = 480, multiplier = 10;
     sf::RenderWindow window(sf::VideoMode(width, height), "");
     std::vector<sf::ConvexShape> outlineList;
     std::vector<sf::ConvexShape> filList = makeList(list, outlineList, multiplier);

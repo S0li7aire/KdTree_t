@@ -1,7 +1,7 @@
-#ifndef RECTANGLES_H
-#define RECTANGLES_H
+#pragma once
 
-#include "incl.h"
+#include <map>
+#include <vector>
 
 struct Rectangle {
     float x1, y1, x2, y2;
@@ -15,5 +15,3 @@ struct Rectangle {
 
     std::vector<float> draw();
 };
-
-#endif

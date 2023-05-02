@@ -1,7 +1,6 @@
-#ifndef NODE_H
-#define NODE_H
+#pragma once
 
-#include "incl.h"
+#include "Rectangle.h"
 
 struct Node {
     std::vector<Rectangle> rectangles;
@@ -21,6 +20,3 @@ struct Node {
 
     int getIndex(const std::vector<Rectangle>& rectangles, int split_dimensions);
 };
-
-
-#endif
